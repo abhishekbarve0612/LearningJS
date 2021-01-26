@@ -4,8 +4,8 @@ body {
 }
 .game-container {
   display: grid;
-  grid-template-columns: repeat(6, auto);
-  width: 286px;
+  grid-template-columns: repeat(9, auto);
+  width: 450px;
   margin: 50px auto;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 .bombed {
-  background-color: red;
+  background-image: url("https://img.icons8.com/emoji/48/000000/bomb-emoji.png");
 }
 
 .cell {
