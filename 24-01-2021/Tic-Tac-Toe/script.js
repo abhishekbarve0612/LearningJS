@@ -57,7 +57,7 @@ function setContainer(){
             var newNode = document.createTextNode("0");
             e.target.appendChild(newNode);
             for (const arr of winningConditions) {
-              res = arr.every(function(val) { 
+              var res = arr.every(function(val) { 
                 return zeroes.indexOf(val) >= 0; 
               });
               if (res == true){
@@ -73,7 +73,7 @@ function setContainer(){
             var newNode = document.createTextNode("X");
             e.target.appendChild(newNode);
             for (const arr of winningConditions) {
-              res = arr.every(function(val) { 
+              var res = arr.every(function(val) { 
                 return crosses.indexOf(val) >= 0; 
               }); 
               if (res == true){
