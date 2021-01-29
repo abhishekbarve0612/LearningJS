@@ -43,3 +43,22 @@ There are 3 states:
     In this case, Verify button should disappear and You are a human. Congratulations! or We can't verify you as a human. You selected the non-identical tiles. message should come up depending on whether the tiles clicked were identical or not. 
 -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I am not a robot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h3>Please click on the identical tiles to verify that you are not a robot </h3>
+    <div class="image-set"></div>
+    <p id="para"></p>
+    <button id="reset" onclick="reset();"  style="visibility: hidden;">Reset</button>
+    <button id="btn" onclick="verify(this);" style="visibility: hidden;">Verify</button>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
