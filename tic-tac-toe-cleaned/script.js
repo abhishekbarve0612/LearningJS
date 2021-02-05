@@ -80,5 +80,6 @@ function reset() {
   for (const cell of cells) {
       cell.innerText = "";
   }
-  statusDisplay,innerText = "";
+  statusDisplay.innerText = "";
+  gameOver = false;
 }
