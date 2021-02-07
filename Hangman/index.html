@@ -7,7 +7,38 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div class="container">
+    <h1>HangMan</h1>
+    <p>Guess the correct word!</p>
+    <div class="game">
+      <svg width="250" height="350" class="figure">
+        <line x1="40" y1="20" x2="140" y2="20" data-ns-test="figure-part" />
+        <line x1="140" y1="20" x2="140" y2="50" data-ns-test="figure-part" />
+        <line x1="40" y1="20" x2="40" y2="300" data-ns-test="figure-part" />
+        <line x1="20" y1="300" x2="140" y2="300" data-ns-test="figure-part" />
+
+        <circle cx='140' cy='80' r='30' id="1" data-ns-test="figure-part" />
+        
+        <line x1="140" y1="110" x2="140" y2="200" id="2" data-ns-test="figure-part" />
+
+        <line x1="140" y1="150" x2="100" y2="120" id="3" data-ns-test="figure-part" />
+        <line x1="140" y1="150" x2="180" y2="120" id="4" data-ns-test="figure-part" />
+
+        <line x1="140" y1="200" x2="100" y2="220" id="5" data-ns-test="figure-part" />
+        <line x1="140" y1="200" x2="180" y2="220" id="6" data-ns-test="figure-part" />
+      </svg>
+      <div class="col-2">
+        <h3>Guessed Wrong Letters</h3>
+        <div class="mistyped"></div>
+        <span class="result"></span>
+        <button class="reset" data-ns-test="play-button" onclick="reset();">RESET</button>
+      </div>
+      
+    </div>
+    <div class="answer-container">
+        
+    </div>
+  </div>
 </body>
 <script src="script.js"></script>
 </html>
