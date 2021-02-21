@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning GridBox</title>
+  <style>
+
+    body{
+      background-color: gray;
+    }
+    .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 20px;
+      grid-auto-rows: minmax(50px, auto);
+      justify-items: stretch;
+      align-items: stretch;
+    }
+
+    .wrapper > div {
+      background-color: bisque;
+      padding: 2px;
+    }
+    .wrapper > div:nth-child(odd){
+      background-color: azure;
+    }
+
+    .box0{
+      grid-column: 1/3;
+      grid-row: 1/3;
+    }
+
+    .box1{
+      grid-column: 3/6;
+      grid-row: 1/3;
+      justify-self: right;
+    }
+
+    .box3{
+      grid-row: 6/8;
+      grid-column: 1/3;
+
+    }
+    .box4{
+      align-self: start;
+    }
+
+    .box5{
+      grid-column: 2/3;
+      grid-row: 5;
+    }
+    .box6{
+      grid-column: 1/3;
+      grid-row: 3/4;
+    }
+
+    .box2{
+      align-self: center;
+    }
+
+    
+  </style>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="box box0">Box 0</div>
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+      <div class="box box4">Box 4</div>
+      <div class="box box5">Box 5</div>
+      <div class="box box6">Box 6</div>
+    </div>
+
+  
+  
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning GridBox</title>
+  <style>
+
+    body{
+      background-color: gray;
+    }
+    .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr 2fr);
+      grid-auto-rows: minmax(100px, auto);
+      gap: 20px;
+    }
+
+    .wrapper > div {
+      background-color: bisque;
+      padding: 2px;
+    }
+    .wrapper > div:nth-child(odd){
+      background-color: azure;
+    }
+  </style>
+</head>
+<body>
+    <div class="wrapper">
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sit sapiente sint, cumque temporibus ratione accusantium architecto cupiditate exercitationem hic tempora beatae explicabo quaerat! Recusandae temporibus nesciunt quas culpa tempore, ipsam perferendis hic quam mollitia aperiam praesentium eius cupiditate quo dicta itaque, illum laboriosam vel voluptate distinctio veritatis dignissimos asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cupiditate quasi consequatur ducimus perferendis sequi tenetur, aspernatur nam numquam, accusamus, nisi cum est possimus sunt. Perferendis, ullam. Corrupti, minima quod?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div class="nested">
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+
+  
+  
+</body>
+</html>
